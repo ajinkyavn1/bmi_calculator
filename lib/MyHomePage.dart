@@ -13,7 +13,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var a=5.0;
+  var a=50.0;
   @override
   Widget build(BuildContext context) {
 
@@ -24,10 +24,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body:Column(
           children: [
-            Container(
-                margin: EdgeInsets.all(10),
-                child:"BMI Calculate".text.bold.make()
-            ),
             Expanded(
               child: Row(
                 children: [
@@ -75,18 +71,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     color: Color(0xFF1D1E33),
                     borderRadius: BorderRadius.circular(10)
                 ),
-                child: Slider(
-                  onChanged: (value){
-                    value>100?a=0:a=value;
-                    print(value);
-                    a=value;
-                    setState(() {
-                    });
-                  },
-                  value:a,
-                  max: 100,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    "${a} CM".text.bold.xl2.make(),
+                    Slider(
+                      onChanged: (value){
 
-                ),
+                        a=value;
+                        a=a.toInt() as double;
+                        setState(() {
+                        });
+                      },
+                      value:a,
+                      max: 250,
+
+                    ),
+                  ],
+                )
               ),
             ),
             Expanded(
