@@ -101,7 +101,18 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: Color(0xFF1D1E33),
                           borderRadius: BorderRadius.circular(10)
                       ),
-
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          "Age".text.bold.make(),
+                          Row(
+                            children: [
+                              Icon(Icons.add),
+                              "0".text.white.bold.make()
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
