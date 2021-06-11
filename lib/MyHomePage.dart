@@ -222,6 +222,7 @@ var Selectedgender=Gender.male;
             ),
             GestureDetector(
               onTap: (){
+                BMIBrain Brain=BMIBrain(Weight, a);
                Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
               },
               child: Container(

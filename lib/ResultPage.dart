@@ -41,7 +41,7 @@ class ResultPage extends StatelessWidget {
             ),
           GestureDetector(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
+              Navigator.pop(context);
             },
             child: Container(
               decoration: BoxDecoration(
