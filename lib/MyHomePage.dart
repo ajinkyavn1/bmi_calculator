@@ -234,8 +234,12 @@ var Selectedgender=Gender.male;
                 height: 50,
                 margin: EdgeInsets.only(top: 10),
                 width: double.infinity,
-                color: Colors.blueAccent,
-                child: "Calculate".text.center.xl5.bold.italic.make(),
+                
+                decoration: BoxDecoration(
+                    color: Colors.deepPurple,
+                  borderRadius: BorderRadius.circular(15)
+                ),
+                child: "Calculate".text.center.xl5.bold.make(),
               ),
             ),
           ],
