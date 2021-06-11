@@ -1,5 +1,5 @@
+import 'package:bmi_calculator/ResultPage.dart';
 import 'package:flutter/material.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 import 'MyHomePage.dart';
 
@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
        primaryColor: Color(0xFF0A0E21)
       ),
       home: MyHomePage(title: 'BMI Calculator'),
+      initialRoute: "/main",
+      routes:{
+        "/main":(context)=>MyHomePage(),
+        "/ResultPage":(context)=>ResultPage()
+      },
     );
   }
 }

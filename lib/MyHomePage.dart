@@ -9,7 +9,6 @@ const inactiveColor=Color(0xFF111328);
 enum Gender{male,female}
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
   final String title;
   @override
   _MyHomePageState createState() => _MyHomePageState();
