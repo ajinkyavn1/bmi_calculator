@@ -1,4 +1,5 @@
 
+import 'package:bmi_calculator/ResultPage.dart';
 import 'package:bmi_calculator/wiidgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -215,8 +216,19 @@ var Selectedgender=Gender.male;
                       ),
                     ),
                   ),
-
                 ],
+              ),
+            ),
+            GestureDetector(
+              onTap: (){
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
+              },
+              child: Container(
+                height: 50,
+                margin: EdgeInsets.only(top: 10),
+                width: double.infinity,
+                color: Colors.blueAccent,
+                child: "Calculate".text.center.xl5.bold.italic.make(),
               ),
             ),
           ],
