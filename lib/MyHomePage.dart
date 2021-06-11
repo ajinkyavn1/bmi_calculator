@@ -1,4 +1,5 @@
 
+import 'package:bmi_calculator/BMI_Brain.dart';
 import 'package:bmi_calculator/ResultPage.dart';
 import 'package:bmi_calculator/wiidgets.dart';
 import 'package:flutter/material.dart';
@@ -221,6 +222,7 @@ var Selectedgender=Gender.male;
             ),
             GestureDetector(
               onTap: (){
+              var cal=BMIBrain(hi)
                Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
               },
               child: Container(

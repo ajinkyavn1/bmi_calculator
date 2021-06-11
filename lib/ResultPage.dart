@@ -6,7 +6,7 @@ class ResultPage extends StatelessWidget {
   final String suggestion;
   final String BMIresult;
   final String interpitation;
-  const ResultPage({@required this.color,@required this.suggestion,@required this.BMIresult,@required this.interpitation});
+  const ResultPage({this.color,@required this.suggestion,@required this.BMIresult,@required this.interpitation});
 
   @override
   Widget build(BuildContext context) {
