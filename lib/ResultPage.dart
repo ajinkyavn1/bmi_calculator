@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 class ResultPage extends StatelessWidget {
-  const ResultPage({Key key}) : super(key: key);
+
+  final Color color;
+  final String suggestion;
+  final String BMIresult;
+  final String interpitation;
+  const ResultPage({@required this.color,@required this.suggestion,@required this.BMIresult,@required this.interpitation});
 
   @override
   Widget build(BuildContext context) {
