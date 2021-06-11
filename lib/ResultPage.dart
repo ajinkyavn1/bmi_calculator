@@ -23,7 +23,15 @@ class ResultPage extends StatelessWidget {
                   color: Color(0xFF1D1E33),
                   borderRadius: BorderRadius.circular(10)
               ),
-              child:"sdfdsfsd".text.center.make(),
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  "Normal".text.xl4.bold.color(Colors.green).make(),
+                  "18".text.xl6.bold.make(),
+                  "Your BMI Result is quite Low,You Shoud Eat More!".text.center.xl4.make(),
+                ],
+              )
               ),
             ),
           GestureDetector(
