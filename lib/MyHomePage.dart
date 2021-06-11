@@ -223,7 +223,12 @@ var Selectedgender=Gender.male;
             GestureDetector(
               onTap: (){
                 BMIBrain Brain=BMIBrain(Weight, a);
-               Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage(
+                 BMIresult: Brain.CalculateBMI(),
+                 interpitation: Brain.getResult(),
+                 suggestion: Brain.getInterpitation(),
+
+               )));
               },
               child: Container(
                 height: 50,

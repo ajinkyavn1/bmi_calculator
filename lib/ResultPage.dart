@@ -32,9 +32,9 @@ class ResultPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  "Normal".text.xl4.bold.color(Colors.green).make(),
-                  "18".text.xl6.bold.make(),
-                  "Your BMI Result is quite Low,You Shoud Eat More!".text.center.xl4.make(),
+                  "${interpitation}".text.xl4.bold.color(Colors.green).make(),
+                  "${BMIresult}".text.xl6.bold.make(),
+                  "${suggestion}".text.center.xl4.make(),
                 ],
               )
               ),
