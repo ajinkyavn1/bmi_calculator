@@ -222,7 +222,6 @@ var Selectedgender=Gender.male;
             ),
             GestureDetector(
               onTap: (){
-              var cal=BMIBrain(hi)
                Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultPage()));
               },
               child: Container(
