@@ -227,7 +227,7 @@ var Selectedgender=Gender.male;
                  BMIresult: Brain.CalculateBMI(),
                  interpitation: Brain.getResult(),
                  suggestion: Brain.getInterpitation(),
-
+                 color: Brain.getColor(),
                )));
               },
               child: Container(

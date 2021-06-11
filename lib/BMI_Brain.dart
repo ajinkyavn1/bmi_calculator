@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
 class BMIBrain{
   final int Weight;
   final double height;
@@ -29,6 +31,17 @@ class BMIBrain{
       return "You have Normal Body weight. Good job!";
     }else{
       return "You have lower than Normal body weight. you can eat a bit more";
+    }
+  }
+  getColor(){
+    if(_BMI>=25)
+    {
+      return Colors.red;
+    }else if(_BMI>18.5 && _BMI<25)
+    {
+      return Colors.green;;
+    }else{
+      return Colors.blueAccent;
     }
   }
 

@@ -8,6 +8,7 @@ class ResultPage extends StatelessWidget {
   final String interpitation;
   const ResultPage({this.color,@required this.suggestion,@required this.BMIresult,@required this.interpitation});
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +33,7 @@ class ResultPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  "${interpitation}".text.xl4.bold.color(Colors.green).make(),
+                  "${interpitation}".text.xl4.bold.color(color).make(),
                   "${BMIresult}".text.xl6.bold.make(),
                   "${suggestion}".text.center.xl4.make(),
                 ],
