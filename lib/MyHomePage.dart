@@ -11,7 +11,6 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -156,7 +155,9 @@ var Selectedgender=Gender.male;
                                     if(Weight<=0)
                                       {
                                         Weight=0;
-                                        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: "Baby Not Born".text.make(),));
+                                        ScaffoldMessenger.of(context).showSnackBar(
+                                            SnackBar(
+                                              content: "Baby Not Born".text.bold.italic.make(),));
                                       }
                                   });
                                 },
@@ -198,6 +199,13 @@ var Selectedgender=Gender.male;
 
                                   setState(() {
                                     age--;
+                                    if(age<=0)
+                                    {
+                                      age=0;
+                                      ScaffoldMessenger.of(context).showSnackBar(
+                                          SnackBar(
+                                            content: "Baby Not Born".text.bold.italic.make(),));
+                                    }
                                   });
                               },
                               )
