@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: MyHomePage(title: 'BMI Calculator'),
       initialRoute: "/main",
       routes:{
-        "/main":(context)=>MyHomePage(),
+        "/main":(context)=>MyHomePage(title: 'BMI Calculator'),
         "/ResultPage":(context)=>ResultPage()
       },
     );
